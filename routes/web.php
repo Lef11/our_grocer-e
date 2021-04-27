@@ -23,3 +23,16 @@ Route::get('/checkout', 'ClientController@checkout');
 Route::get('/login', 'ClientController@login');
 Route::get('/signup', 'ClientController@signup');
 
+Route::get('/admin', 'AdminController@dashboard');
+Route::get('/addcateg', 'AdminController@addCategory');
+Route::get('/categories', 'AdminController@categories');
+Route::get('/orders', 'AdminController@orders');
+
+
+Route::get('/addproduct', 'ProductController@addProduct');
+Route::get('/products', 'ProductController@products');
+
+Route::get('/sliders', 'SliderController@sliders');
+Route::get('/addslider', 'SliderController@addSlider');
+
+

@@ -10,7 +10,7 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Create product</h4>
-            {!!Form::open(['action' => 'AdminController@addproduct', 'class' => 'cmxform', 'method' => 'POST', 'id' => 'commentForm'])!!}
+            {!!Form::open(['action' => 'ProductController@addProduct', 'class' => 'cmxform', 'method' => 'POST', 'id' => 'commentForm'])!!}
             {{csrf_field()}}
               <div class="form-group">
                 {{Form::label('', 'Product Name', ['for' => 'cname'])}}

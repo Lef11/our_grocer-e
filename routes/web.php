@@ -24,12 +24,13 @@ Route::get('/login', 'ClientController@login');
 Route::get('/signup', 'ClientController@signup');
 
 Route::get('/admin', 'AdminController@dashboard');
-Route::get('/addcateg', 'AdminController@addCategory');
-Route::get('/categories', 'AdminController@categories');
 Route::get('/orders', 'AdminController@orders');
 
+Route::get('/addcategory', 'CategoryController@addCategory');
+Route::get('/categories', 'CategoryController@categories');
 
 Route::get('/addproduct', 'ProductController@addProduct');
+Route::post('/savecategory', 'CategoryController@saveCategory');
 Route::get('/products', 'ProductController@products');
 
 Route::get('/sliders', 'SliderController@sliders');

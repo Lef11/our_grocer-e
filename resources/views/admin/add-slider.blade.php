@@ -10,7 +10,7 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Create slider</h4>
-            {!!Form::open(['action' => 'AdminController@addproduct', 'class' => 'cmxform', 'method' => 'POST', 'id' => 'commentForm'])!!}
+            {!!Form::open(['action' => 'SliderController@addSlider', 'class' => 'cmxform', 'method' => 'POST', 'id' => 'commentForm'])!!}
             {{csrf_field()}}
                         <div class="form-group">
                             {{Form::label('', 'Description one', ['for' => 'cname'])}}

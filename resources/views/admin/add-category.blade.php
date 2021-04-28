@@ -10,7 +10,18 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Create category</h4>
-            {!!Form::open(['action' => 'AdminController@addcategory', 'class' => 'cmxform', 'method' => 'POST', 'id' => 'commentForm'])!!}
+          @if (Session::has('success'))
+              <div class="alert alert-success">
+                  {{Session::get('success')}}
+              </div>
+            @endif
+
+                @if (Session::has('fail'))
+                    <div class="alert alert-danger">
+                        {{Session::get('fail')}}
+                    </div>
+                @endif
+            {!!Form::open(['action' => 'CategoryController@saveCategory', 'class' => 'cmxform', 'method' => 'POST', 'id' => 'commentForm'])!!}
             {{csrf_field()}}
               <div class="form-group">
                 {{Form::label('', 'Product Category', ['for' => 'cname'])}}

@@ -14,3 +14,5 @@ class SliderController extends Controller
         return view('admin.sliders');
     }
 }
+
+

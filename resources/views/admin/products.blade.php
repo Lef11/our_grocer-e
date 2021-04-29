@@ -177,6 +177,6 @@
   @endsection
 
   @section('scripts')
-  <script src="back-end/js/data-table.js"></script>
+  <script src="{{asset('back-end/js/data-table.js')}}"></script>
 
   @endsection

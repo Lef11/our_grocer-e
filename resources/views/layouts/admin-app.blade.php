@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>@yield('title')</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="back-end/css/themify-icons.css">
-  <link rel="stylesheet" href="back-end/css/vendor.bundle.base.css">
-  <link rel="stylesheet" href="back-end/css/vendor.bundle.addons.css">
+  <link rel="stylesheet" href="{{asset('back-end/css/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{asset('back-end/css/vendor.bundle.base.css')}}">
+  <link rel="stylesheet" href="{{asset('back-end/css/vendor.bundle.addons.css')}}">
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="back-end/css/style.css">
+  <link rel="stylesheet" href="{{asset('back-end/css/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="back-end/images/logo_2H_tech.png" />
+  <link rel="shortcut icon" href="{{asset('back-end/images/logo_2H_tech.png')}}" />
 </head>
 <body>
 <!-- container-scroller start -->
@@ -43,17 +43,19 @@
 <!-- container-scroller end -->
 
 <!-- plugins:js -->
-<script src="back-end/js/vendor.bundle.base.js"></script>
-<script src="back-end/js/vendor.bundle.addons.js"></script>
+<script src="{{asset('back-end/js/vendor.bundle.base.js')}}"></script>
+<script src="{{asset('back-end/js/vendor.bundle.addons.js')}}"></script>
 <!-- endinject -->
 <!-- Plugin js for this page-->
 <!-- End plugin js for this page-->
 <!-- inject:js -->
-<script src="back-end/js/off-canvas.js"></script>
-<script src="back-end/js/hoverable-collapse.js"></script>
-<script src="back-end/js/template.js"></script>
-<script src="back-end/js/settings.js"></script>
-<script src="back-end/js/todolist.js"></script>
+<script src="{{asset('back-end/js/off-canvas.js')}}"></script>
+<script src="{{asset('back-end/js/hoverable-collapse.js')}}"></script>
+<script src="{{asset('back-end/js/template.js')}}"></script>
+<script src="{{asset('back-end/js/settings.js')}}"></script>
+<script src="{{asset('back-end/js/todolist.js')}}"></script>
+<script src="{{asset('back-end/js/bootbox.min.js')}}"></script>
+
 <!-- endinject -->
 <!-- Custom js for this page-->
     @yield('scripts')

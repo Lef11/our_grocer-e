@@ -62,5 +62,18 @@
 
 @yield('scripts')
 
+<script>
+    $(document).on("click", "#delete", function(e){
+        e.preventDefault();
+        var link = $(this).attr("href");
+        bootbox.confirm("Do you realy want to delete this ?", function(confirmed){
+            if (confirmed){
+                window.location.href = link;
+            };
+        });
+    });
+</script>
+
+
 </body>
 </html>

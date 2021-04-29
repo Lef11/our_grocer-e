@@ -27,11 +27,16 @@ Route::get('/admin', 'AdminController@dashboard');
 Route::get('/orders', 'AdminController@orders');
 
 Route::get('/addcategory', 'CategoryController@addCategory');
+Route::post('/savecategory', 'CategoryController@saveCategory');
 Route::get('/categories', 'CategoryController@categories');
+Route::get('/edit/{id}', 'CategoryController@edit');
+Route::post('/updateCategory', 'CategoryController@updateCategory');
+Route::get('/delete/{id}', 'CategoryController@delete');
 
 Route::get('/addproduct', 'ProductController@addProduct');
-Route::post('/savecategory', 'CategoryController@saveCategory');
 Route::get('/products', 'ProductController@products');
+Route::post('/saveproduct', 'ProductController@saveProduct');
+
 
 Route::get('/sliders', 'SliderController@sliders');
 Route::get('/addslider', 'SliderController@addSlider');
